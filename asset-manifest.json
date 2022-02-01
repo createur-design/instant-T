@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/createur-design/instant-T/static/css/main.5e17963f.css",
+    "main.js": "/createur-design/instant-T/static/js/main.cc140d2d.js",
+    "static/js/787.76db2f2b.chunk.js": "/createur-design/instant-T/static/js/787.76db2f2b.chunk.js",
+    "static/media/500537-istock-611860128.jpg": "/createur-design/instant-T/static/media/500537-istock-611860128.edc204abf4c424d73b5b.jpg",
+    "index.html": "/createur-design/instant-T/index.html",
+    "main.5e17963f.css.map": "/createur-design/instant-T/static/css/main.5e17963f.css.map",
+    "main.cc140d2d.js.map": "/createur-design/instant-T/static/js/main.cc140d2d.js.map",
+    "787.76db2f2b.chunk.js.map": "/createur-design/instant-T/static/js/787.76db2f2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e17963f.css",
+    "static/js/main.cc140d2d.js"
+  ]
+}
