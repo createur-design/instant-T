@@ -1,0 +1,21 @@
+footer {
+  padding: $paddingContent 0;
+  background-color: #212529;
+  color: white;
+  nav {
+    ul,
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        display: block;
+        padding: 10px;
+      }
+    }
+  }
+}

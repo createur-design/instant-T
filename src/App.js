@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+
+import { Home } from "./templates/pages/Home";
+import { Footer } from "./templates/Footer";
+import { Header } from "./templates/Header";
+import { Gallery } from "./templates/pages/Gallery";
+import { Profil } from "./templates/pages/Profil";
+import { HallOfFame } from "./templates/pages/HallOfFame";
 
 function App() {
+  const user = {
+    connected: false,
+    isAdmin: false,
+  };
+  const location = useLocation().pathname;
+  console.log(location);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {location !== "/" ? <Header /> : ""}
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/gallery" element={<Gallery />}></Route>
+        <Route
+          path="/stats"
+          element={user.connected ? <HallOfFame /> : <Navigate to="/profil" />}
+        ></Route>
+        <Route path="/profil" element={<Profil />}></Route>
+      </Routes>
+      {location !== "/" ? <Footer /> : ""}
     </div>
   );
 }
